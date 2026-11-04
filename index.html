@@ -3,36 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNESR - Plan de Estudios Mercadeo</title>
-  
-  <script type="module" crossorigin src="./assets/main-CdK2XxnP.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BeQwkgKf.css">
+  <title>UNESR - Planes de Estudio</title>
+  <script type="module" crossorigin src="./assets/main-BIn3dpjH.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-aX22jSVI.css">
 </head>
-<body class="h-full flex flex-col justify-center items-center px-4 py-12">
-  <div class="max-w-3xl w-full text-center space-y-8">
-    <div class="inline-flex items-center justify-center p-4 bg-blue-600/10 rounded-3xl border border-blue-500/20 text-blue-500 mb-2">
-      <i class="fa-solid fa-graduation-cap text-5xl"></i>
+<!-- Cambiamos justify-center por min-h-screen y agregamos py-8 sm:py-12 para que comience desde arriba -->
+<body class="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-start px-4 py-8 sm:py-12">
+  <div class="max-w-3xl w-full text-center space-y-6 sm:space-y-8">
+    
+    <!-- Logo / Icono -->
+    <div class="inline-flex items-center justify-center p-3 sm:p-4 bg-blue-600/10 rounded-3xl border border-blue-500/20 text-blue-500 mb-1 sm:mb-2">
+      <i class="fa-solid fa-graduation-cap text-4xl sm:text-5xl"></i>
     </div>
     
+    <!-- Títulos y descripción -->
     <div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
-        Control Académico de Mercadeo
+      <h1 class="text-2xl sm:text-5xl font-extrabold tracking-tight text-white mb-2 sm:mb-3">
+        Control Académico UNESR
       </h1>
-      <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+      <p class="text-slate-400 text-xs sm:text-base max-w-xl mx-auto px-2">
         Universidad Nacional Experimental Simón Rodríguez (UNESR). Selecciona tu Plan de Estudios para gestionar tus notas, semestres y créditos.
       </p>
     </div>
 
     <!-- Cards Selector -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 text-left">
-      <!-- Plan 2024 -->
-      <a href="plan-2024.html" class="group relative bg-slate-900 border border-slate-800 hover:border-blue-500/50 rounded-3xl p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col justify-between">
-        <div class="space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-2 text-left w-full">
+      
+      <!-- Plan Mercadeo 2024 -->
+      <a href="plan-2024.html" class="group relative bg-slate-900 border border-slate-800 hover:border-blue-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col justify-between">
+        <div class="space-y-3 sm:space-y-4">
           <div class="flex justify-between items-center">
             <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full border border-blue-500/20">Vigente</span>
             <i class="fa-solid fa-sparkles text-blue-400 group-hover:scale-110 transition-transform"></i>
           </div>
-          <h2 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Plan de Estudios 2024</h2>
+          <h2 class="text-lg sm:text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Plan de Estudios 2024</h2>
           <p class="text-xs text-slate-400 leading-relaxed">
             Diseñado para estudiantes ingresados a partir del año 2024. Incluye asignaturas actualizadas como Inteligencia Artificial y Geopolítica.
           </p>
@@ -43,26 +47,32 @@
         </div>
       </a>
 
-    <!-- Plan RRHH 2024 -->
-    <a href="plan-rrhh-2024.html" class="group bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-3xl p-6 transition-all flex flex-col justify-between">
-      <div>
-        <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full border border-emerald-500/20">Vigente</span>
-        <h3 class="text-xl font-bold text-white mt-3 group-hover:text-emerald-400 transition-colors">Plan RRHH 2024</h3>
-        <p class="text-xs text-slate-400 mt-2">Plan actualizado con IA, geopolítica y nuevas electivas.</p>
-      </div>
-      <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-emerald-400">
-        <span>Ingresar al Plan</span>
-        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-      </div>
-    </a>
-      <!-- Plan 1982 -->
-      <a href="plan-1982.html" class="group relative bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-3xl p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10 flex flex-col justify-between opacity-30 hover:opacity-100 transition-opacity duration-300">
-        <div class="space-y-4">
+      <!-- Plan RRHH 2024 -->
+      <a href="plan-rrhh-2024.html" class="group relative bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 flex flex-col justify-between">
+        <div class="space-y-3 sm:space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full border border-emerald-500/20">Vigente</span>
+            <i class="fa-solid fa-users text-emerald-400 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Plan RRHH 2024</h2>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Plan actualizado con IA, geopolítica y nuevas electivas enfocado en Recursos Humanos.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-bold text-emerald-400">
+          <span>Ingresar al Plan</span>
+          <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+        </div>
+      </a>
+
+      <!-- Plan Mercadeo 1982 -->
+      <a href="plan-1982.html" class="group relative bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10 flex flex-col justify-between opacity-50 hover:opacity-100 transition-opacity">
+        <div class="space-y-3 sm:space-y-4">
           <div class="flex justify-between items-center">
             <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-bold rounded-full border border-purple-500/20">CD Nº 457</span>
             <i class="fa-solid fa-clock-rotate-left text-purple-400 group-hover:scale-110 transition-transform"></i>
           </div>
-          <h2 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Plan Anterior (1982)</h2>
+          <h2 class="text-lg sm:text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Plan Anterior (1982)</h2>
           <p class="text-xs text-slate-400 leading-relaxed">
             Pensum histórico con reglamentación de la resolución del Consejo Directivo 2010. Para estudiantes con ingreso previo a 2024.
           </p>
@@ -73,23 +83,27 @@
         </div>
       </a>
 
-
-    <!-- Plan RRHH 1982 -->
-    <a href="plan-rrhh-1982.html" class="group bg-slate-900 border border-slate-800 hover:border-amber-500/50 rounded-3xl p-6 transition-all flex flex-col justify-between opacity-30 hover:opacity-100 transition-opacity duration-300">
-      <div>
-        <span class="px-3 py-1 bg-amber-500/10 text-amber-400 text-xs font-bold rounded-full border border-amber-500/20">CD Nº 457</span>
-        <h3 class="text-xl font-bold text-white mt-3 group-hover:text-amber-400 transition-colors">Plan RRHH 1982</h3>
-        <p class="text-xs text-slate-400 mt-2">Pensum histórico con reglamentación de la resolución 2010.</p>
-      </div>
-      <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-amber-400">
-        <span>Ingresar al Plan</span>
-        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-      </div>
-    </a>
+      <!-- Plan RRHH 1982 -->
+      <a href="plan-rrhh-1982.html" class="group relative bg-slate-900 border border-slate-800 hover:border-amber-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/10 flex flex-col justify-between opacity-50 hover:opacity-100 transition-opacity">
+        <div class="space-y-3 sm:space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="px-3 py-1 bg-amber-500/10 text-amber-400 text-xs font-bold rounded-full border border-amber-500/20">CD Nº 457</span>
+            <i class="fa-solid fa-users-rectangle text-amber-400 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Plan RRHH 1982</h2>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Pensum histórico de Recursos Humanos con reglamentación de la resolución 2010.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-bold text-amber-400">
+          <span>Ingresar al Plan</span>
+          <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+        </div>
+      </a>
 
     </div>
 
-    <p class="text-xs text-slate-600 pt-4">UNESR - Dirección de Planificación Académica de Pregrado</p>
+    <p class="text-xs text-slate-600 pt-2 pb-4">UNESR - Dirección de Planificación Académica de Pregrado</p>
   </div>
 </body>
 </html>
