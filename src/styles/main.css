@@ -1,0 +1,33 @@
+/* src/styles/main.css */
+
+/* 1. Todos los @import primero */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "tailwindcss";
+
+/* 2. Luego las directivas y fuentes del sistema */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* INDÍCALE A TAILWIND V4 DÓNDE BUSCAR TUS CLASES AQUÍ: */
+@source "../../index.html";
+@source "../../plan-2024.html";
+@source "../../plan-1982.html";
+@source "../../404.html";
+@source "../**/*.{js,ts,jsx,tsx,html}";
+
+/* 3. Finalmente los estilos personalizados (como las barras de desplazamiento) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
