@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ] # Cambia a 'master' si tu rama principal se llama así
 
+# 👇 ESTO ES LO QUE FALTA: Otorga permisos de escritura al repositorio
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
